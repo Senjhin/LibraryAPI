@@ -25,15 +25,15 @@ Zaimplementowano pełną walidację, obsługę błędów oraz wersjonowanie API 
 
 ### Instalacja
 
-- Uruchom PowerShell jako Administrator
+#### Uruchom PowerShell jako Administrator
 
     cd $HOME\Documents
 
-- Klonuj repozytorium
+#### Klonuj repozytorium
     git clone https://github.com/Senjhin/LibraryAPI
     cd LibraryApi
 
-- Zainstaluj zależności NuGet (jeśli nie zostały zaciągnięte automatycznie):
+#### Zainstaluj zależności NuGet (jeśli nie zostały zaciągnięte automatycznie):
     dotnet add package Microsoft.AspNetCore.JsonPatch --version 9.0.5
     dotnet add package Microsoft.AspNetCore.Mvc.NewtonsoftJson --version 8.0.5
     dotnet add package Microsoft.AspNetCore.Mvc.Versioning --version 5.1.0
@@ -48,8 +48,8 @@ Zaimplementowano pełną walidację, obsługę błędów oraz wersjonowanie API 
     dotnet add package Swashbuckle.AspNetCore.Filters --version 8.0.3
     dotnet add package System.ComponentModel.Annotations --version 5.0.0
 
-- Skrypt do tworzenia Bazy Danych oraz Migracji
+#### Skrypt do tworzenia Bazy Danych oraz Migracji
     ./run.ps1
 
-- Swagger dostepny pod adresem
+#### Swagger dostepny pod adresem
     http://localhost:5063/swagger/index.html
