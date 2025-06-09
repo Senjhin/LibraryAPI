@@ -2,21 +2,6 @@
 
 REST API do zarządzania biblioteką: czytelnicy, książki oraz wypożyczenia.
 
----
-
-## Spis treści
-
-- [Opis projektu](#opis-projektu)  
-- [Technologie](#technologie)  
-- [Instalacja i uruchomienie](#instalacja-i-uruchomienie)  
-- [Konfiguracja bazy danych](#konfiguracja-bazy-danych)  
-- [Skrypt `run.ps1`](#skrypt-runps1)  
-- [Struktura projektu](#struktura-projektu)  
-- [API i wersjonowanie](#api-i-wersjonowanie)  
-- [Swagger / Dokumentacja](#swagger--dokumentacja)  
-- [Obsługa błędów](#obsługa-błędów)  
-
----
 
 ## Opis projektu
 
