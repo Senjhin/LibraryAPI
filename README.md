@@ -43,19 +43,23 @@ Zaimplementowano pełną walidację, obsługę błędów oraz wersjonowanie API 
     git clone https://github.com/Senjhin/LibraryAPI
     cd LibraryApi
 
-# Przywróć wszystkie paczki NuGet
-    dotnet restore
-
-# (Opcjonalnie, jeśli nie masz EF CLI)
-    dotnet tool install --global dotnet-ef
-
 # Zainstaluj zależności NuGet (jeśli nie zostały zaciągnięte automatycznie):
-    dotnet add package Microsoft.EntityFrameworkCore.SqlServer
-    dotnet add package Microsoft.EntityFrameworkCore.Design
-    dotnet add package Microsoft.AspNetCore.JsonPatch
-    dotnet add package Microsoft.AspNetCore.Mvc.Versioning
-    dotnet add package Swashbuckle.AspNetCore
-    dotnet add package Newtonsoft.Json
+    dotnet add package Microsoft.AspNetCore.JsonPatch --version 9.0.5
+    dotnet add package Microsoft.AspNetCore.Mvc.NewtonsoftJson --version 8.0.5
+    dotnet add package Microsoft.AspNetCore.Mvc.Versioning --version 5.1.0
+    dotnet add package Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer --version 5.1.0
+    dotnet add package Microsoft.AspNetCore.OData --version 9.3.2
+    dotnet add package Microsoft.AspNetCore.OpenApi --version 8.0.16
+    dotnet add package Microsoft.EntityFrameworkCore --version 9.0.5
+    dotnet add package Microsoft.EntityFrameworkCore.Design --version 9.0.5
+    dotnet add package Microsoft.EntityFrameworkCore.SqlServer --version 9.0.5
+    dotnet add package Microsoft.EntityFrameworkCore.Tools --version 9.0.5
+    dotnet add package Swashbuckle.AspNetCore --version 8.1.4
+    dotnet add package Swashbuckle.AspNetCore.Filters --version 8.0.3
+    dotnet add package System.ComponentModel.Annotations --version 5.0.0
 
-# Odpal automatyczny skrypt
+# Skrypt do tworzenia Bazy Danych oraz Migracji
     ./run.ps1
+
+# Swagger dostepny pod adresem
+    http://localhost:5063/swagger/index.html
