@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W1H9Lx6aoIw=",
+  "dgSpecHash": "G6gNbsBbmc8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mateusz\\Documents\\REST-API\\libraryapi\\LibraryApi.csproj",
+  "projectFilePath": "C:\\Users\\Mateusz\\Documents\\REST-API\\LibraryApi\\LibraryApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Mateusz\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Mateusz\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
