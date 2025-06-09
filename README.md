@@ -56,7 +56,7 @@ Zaimplementowano pełną walidację, obsługę błędów oraz wersjonowanie API 
 
 # Klonuj repozytorium
     git clone https://github.com/Senjhin/LibraryAPI
-    cd library-api
+    cd LibraryApi
 
 # Przywróć wszystkie paczki NuGet
     dotnet restore
