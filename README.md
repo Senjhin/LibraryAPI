@@ -55,7 +55,7 @@ Zaimplementowano pełną walidację, obsługę błędów oraz wersjonowanie API 
     cd $HOME\Documents
 
 # Klonuj repozytorium
-    git clone https://github.com/twoj-user/library-api.git
+    git clone https://github.com/Senjhin/LibraryAPI
     cd library-api
 
 # Przywróć wszystkie paczki NuGet
@@ -74,4 +74,3 @@ Zaimplementowano pełną walidację, obsługę błędów oraz wersjonowanie API 
 
 # Odpal automatyczny skrypt
     ./run.ps1
-
