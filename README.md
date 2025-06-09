@@ -1,0 +1,77 @@
+# Library API
+
+REST API do zarządzania biblioteką: czytelnicy, książki oraz wypożyczenia.
+
+---
+
+## Spis treści
+
+- [Opis projektu](#opis-projektu)  
+- [Technologie](#technologie)  
+- [Instalacja i uruchomienie](#instalacja-i-uruchomienie)  
+- [Konfiguracja bazy danych](#konfiguracja-bazy-danych)  
+- [Skrypt `run.ps1`](#skrypt-runps1)  
+- [Struktura projektu](#struktura-projektu)  
+- [API i wersjonowanie](#api-i-wersjonowanie)  
+- [Swagger / Dokumentacja](#swagger--dokumentacja)  
+- [Obsługa błędów](#obsługa-błędów)  
+
+---
+
+## Opis projektu
+
+API umożliwia zarządzanie:
+
+- Książkami (dodawanie, edycja, usuwanie, pobieranie)  
+- Czytelnikami (rejestracja, aktualizacja, usuwanie, pobieranie)  
+- Wypożyczeniami książek (tworzenie, zwrot, usuwanie, pobieranie)
+
+Zaimplementowano pełną walidację, obsługę błędów oraz wersjonowanie API (`v1`).
+
+---
+
+## Technologie
+
+- .NET 8.0  
+- Entity Framework Core (Code First)  
+- SQL Server Express  
+- Swagger (OpenAPI)  
+- Microsoft.AspNetCore.Mvc.Versioning  
+- Microsoft.AspNetCore.JsonPatch (PATCH)  
+- Newtonsoft.Json (serializacja JSON)  
+
+---
+
+## Instalacja i uruchomienie
+
+### Wymagania
+
+- .NET 8 SDK  
+- SQL Server Express (z Management Studio)  
+- PowerShell (do skryptów uruchomieniowych)  
+
+# Uruchom PowerShell jako Administrator
+
+    cd $HOME\Documents
+
+# Klonuj repozytorium
+    git clone https://github.com/twoj-user/library-api.git
+    cd library-api
+
+# Przywróć wszystkie paczki NuGet
+    dotnet restore
+
+# (Opcjonalnie, jeśli nie masz EF CLI)
+    dotnet tool install --global dotnet-ef
+
+# Zainstaluj zależności NuGet (jeśli nie zostały zaciągnięte automatycznie):
+    dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+    dotnet add package Microsoft.EntityFrameworkCore.Design
+    dotnet add package Microsoft.AspNetCore.JsonPatch
+    dotnet add package Microsoft.AspNetCore.Mvc.Versioning
+    dotnet add package Swashbuckle.AspNetCore
+    dotnet add package Newtonsoft.Json
+
+# Odpal automatyczny skrypt
+    ./run.ps1
+
