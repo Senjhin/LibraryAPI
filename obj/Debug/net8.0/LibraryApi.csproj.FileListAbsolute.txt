@@ -181,3 +181,4 @@ C:\Users\Mateusz\Documents\REST-API\LibraryApi\obj\Debug\net8.0\refint\LibraryAp
 C:\Users\Mateusz\Documents\REST-API\LibraryApi\obj\Debug\net8.0\LibraryApi.pdb
 C:\Users\Mateusz\Documents\REST-API\LibraryApi\obj\Debug\net8.0\LibraryApi.genruntimeconfig.cache
 C:\Users\Mateusz\Documents\REST-API\LibraryApi\obj\Debug\net8.0\ref\LibraryApi.dll
+C:\Users\Mateusz\Documents\REST-API\libraryapi\obj\Debug\net8.0\LibraryApi.sourcelink.json
